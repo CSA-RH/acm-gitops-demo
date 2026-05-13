@@ -112,6 +112,8 @@ The enviremont has 2 clusters, with the following naming:
 
     ```
     oc create -f bootstrap/clustergroups/10-rbac.yaml
+    oc adm groups new cluster-admins
+    oc adm groups add-users cluster-admins admin
     ```
 
     c.
